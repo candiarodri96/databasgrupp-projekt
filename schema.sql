@@ -1,6 +1,4 @@
-DROP TABLE IF EXISTS loans;
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS members; -- Tar bort befintliga tabeller om de finns
+CREATE DATABASE librarydb_dpu7;
 
 CREATE TABLE members (
     id SERIAL PRIMARY KEY, -- Unikt ID för varje medlem för att identifiera varje medlem unikt

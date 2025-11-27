@@ -1,11 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-# ❗❗ Skriv din PostgreSQL-URL här ❗❗
-# Exempel:
-# postgresql+psycopg2://användare:lösenord@localhost:5432/databasnamn
 
-DATABASE_URL = "postgresql+psycopg2://postgres:Joanna77!!@localhost:5432/librarygrupp"
+DATABASE_URL = "postgresql+psycopg2://postgres:PASSWORD@localhost:5432/databas"
+
 
 
 # --- SQLAlchemy setup ---
@@ -33,6 +31,6 @@ if __name__ == "__main__":
     try:
         with get_session() as session:
             result = session.execute(text("SELECT 1"))
-            print("✓ Database connection successful!", result.scalar())
+            print("Database connection successful!", result.scalar())
     except Exception as e:
-        print("✗ Database connection failed:", e)
+        print("Database connection failed:", e)

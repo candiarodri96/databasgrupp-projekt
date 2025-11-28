@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/23824805/README.md)
+erd§[README.md](https://github.com/user-attachments/files/23824805/README.md)
 # SQL filer 
 Kör Schemas.sql filen först för att skapa databasen och tabellerna
 Sen testdata.sql för att fylla på med test data
